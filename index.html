@@ -1,0 +1,29 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Santa Rooftop Runner</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="page">
+      <header class="hero">
+        <h1>Clair Obscur Rooftop Runner</h1>
+        <p>Help Santa leap across rooftops and dodge winter obstacles.</p>
+      </header>
+      <main class="game-shell">
+        <canvas id="game-canvas" width="960" height="540" aria-label="Santa rooftop runner game"></canvas>
+        <div class="hud" aria-live="polite">
+          <div class="hud-row">
+            <div class="hud-item">Score: <span id="score">0</span></div>
+            <div class="hud-item">Best: <span id="best-score">0</span></div>
+            <div class="hud-item">Distance: <span id="distance">0 m</span></div>
+          </div>
+          <div id="prompt" class="prompt">Tap or press Space to start</div>
+        </div>
+      </main>
+    </div>
+    <script type="module" src="src/game/index.js"></script>
+  </body>
+</html>
